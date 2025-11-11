@@ -8,6 +8,11 @@ const navItems = [
   { label: "Resume", path: "/resume" },
   { label: "Projects", path: "/projects" },
   { label: "Skills", path: "/skills" },
+  { label: "Leadership", path: "/leadership" },
+  { label: "Ethics", path: "/ethics" },
+  { label: "Future", path: "/future" },
+  { label: "Conclusion", path: "/conclusion" },
+  { label: "Testimonials", path: "/testimonials" },
   { label: "Contact", path: "/contact" },
 ];
 
