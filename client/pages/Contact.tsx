@@ -46,7 +46,7 @@ export default function Contact() {
             Let's Connect
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl font-medium">
-            Send me a note — like slipping a letter into an origami envelope.
+            Send me a note �� like slipping a letter into an origami envelope.
           </p>
         </div>
       </section>
@@ -76,8 +76,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1 fine-stroke">Email</h3>
-                    <a 
-                      href="mailto:your.email@example.com" 
+                    <a
+                      href="mailto:shlok.modasa@gmail.com"
                       className="text-primary hover:underline font-medium"
                     >
                       shlok.modasa@gmail.com
@@ -91,8 +91,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1 fine-stroke">Phone</h3>
-                    <a 
-                      href="tel:+1234567890" 
+                    <a
+                      href="tel:+917990431911"
                       className="text-accent hover:underline font-medium"
                     >
                       +91 7990431911
