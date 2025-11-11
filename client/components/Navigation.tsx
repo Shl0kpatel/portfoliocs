@@ -22,20 +22,18 @@ export default function Navigation() {
   return (
     <nav className="sticky top-0 z-50 navbar-paper">
       <div className="portfolio-container flex items-center justify-between h-20">
-        {/* Origami Logo Mark / Wax Seal */}
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="nav-logo-mark group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-            <div className="relative">
-              <span className="text-2xl">🦢</span>
-            </div>
+        {/* Logo / Branding */}
+        <Link to="/" className="flex items-center gap-2 group">
+          <div className="nav-logo-mark w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+            <span className="text-sm font-bold text-primary">SP</span>
           </div>
-          <span className="font-bold text-lg hidden sm:inline-block text-foreground group-hover:text-primary transition-colors fine-stroke">
+          <span className="font-bold text-base hidden sm:inline-block text-foreground group-hover:text-primary transition-colors">
             Shlok Patel
           </span>
         </Link>
 
         {/* Desktop Navigation - Hand-cut Label Tabs */}
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden lg:flex items-center gap-1 overflow-x-auto">
           {navItems.map((item) => (
             <Link
               key={item.path}
