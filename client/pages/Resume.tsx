@@ -13,7 +13,7 @@ export default function Resume() {
           <div className="flex items-center justify-between flex-col md:flex-row gap-4">
             <div className="flex-1">
               <div className="flex items-center gap-2 text-primary mb-4">
-                <span className="text-sm font-semibold fine-stroke">📋 PROFESSIONAL</span>
+                <span className="text-sm font-semibold fine-stroke">PROFESSIONAL</span>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground fine-stroke">Resume & CV</h1>
               <p className="text-lg text-foreground font-medium max-w-2xl">
