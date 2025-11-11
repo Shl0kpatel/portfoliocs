@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -204,13 +205,7 @@ export default function About() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 bg-background/50">
-        <div className="portfolio-container text-center">
-          <p className="text-muted-foreground text-sm font-medium">
-            © 2024 My Digital Portfolio. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

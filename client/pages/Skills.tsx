@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight, Code, Users, Zap } from "lucide-react";
+import { ArrowRight, Code2, Users, Palette } from "lucide-react";
 
 const skillCategories = [
   {
@@ -253,13 +254,7 @@ export default function Skills() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 bg-background/50">
-        <div className="portfolio-container text-center">
-          <p className="text-muted-foreground text-sm font-medium">
-            © 2025 My Digital Portfolio. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
