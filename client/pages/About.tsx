@@ -11,7 +11,7 @@ export default function About() {
       <section className="py-12 md:py-16 border-b border-border">
         <div className="portfolio-container">
           <div className="flex items-center gap-2 text-primary mb-4">
-            <span className="text-sm font-semibold fine-stroke">📖 LEARNING PHILOSOPHY</span>
+            <span className="text-sm font-semibold fine-stroke">LEARNING PHILOSOPHY</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground fine-stroke">
             My Personal Journey
@@ -25,9 +25,7 @@ export default function About() {
       {/* Main Content - Handwritten Letter Style */}
       <section className="section-padding border-b border-border relative">
         <div className="portfolio-container">
-          {/* Origami illustrations */}
-          <div className="origami-mark bird">🕊️</div>
-          <div className="origami-mark plane">✈️</div>
+          {/* Origami illustrations removed for professional design */}
 
           {/* Letter container */}
           <div className="letter-container">
