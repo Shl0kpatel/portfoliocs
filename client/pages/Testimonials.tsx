@@ -62,7 +62,9 @@ export default function Testimonials() {
       <section className="py-12 md:py-16 border-b border-border">
         <div className="portfolio-container">
           <div className="flex items-center gap-2 text-primary mb-4">
-            <span className="text-sm font-semibold fine-stroke">⭐ RECOMMENDATIONS</span>
+            <span className="text-sm font-semibold fine-stroke">
+              ⭐ RECOMMENDATIONS
+            </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground fine-stroke">
             Testimonials
@@ -101,7 +103,9 @@ export default function Testimonials() {
 
                 {/* Author */}
                 <div className="pt-4 border-t border-border">
-                  <p className="font-bold text-foreground fine-stroke">{testimonial.name}</p>
+                  <p className="font-bold text-foreground fine-stroke">
+                    {testimonial.name}
+                  </p>
                   <p className="text-primary font-semibold text-sm fine-stroke">
                     {testimonial.title}
                   </p>
@@ -146,8 +150,12 @@ export default function Testimonials() {
                 key={theme.title}
                 className="folded-note p-6 text-center hover:fold-shadow-2 transition-all paper-corner paper-texture"
               >
-                <h3 className="font-bold text-lg mb-2 text-foreground fine-stroke">{theme.title}</h3>
-                <p className="text-foreground text-sm font-medium">{theme.description}</p>
+                <h3 className="font-bold text-lg mb-2 text-foreground fine-stroke">
+                  {theme.title}
+                </h3>
+                <p className="text-foreground text-sm font-medium">
+                  {theme.description}
+                </p>
               </div>
             ))}
           </div>
@@ -161,8 +169,9 @@ export default function Testimonials() {
             Letters of Recommendation Available
           </h2>
           <p className="text-foreground font-medium max-w-2xl mx-auto mb-6">
-            Full letters of recommendation from academic advisors and professional
-            colleagues are available upon request for academic and job applications.
+            Full letters of recommendation from academic advisors and
+            professional colleagues are available upon request for academic and
+            job applications.
           </p>
           <button className="paper-button">
             Contact for References

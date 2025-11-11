@@ -45,37 +45,66 @@ const learningAreas = [
   {
     area: "Advanced Data Systems",
     description: "Distributed databases, data warehousing, real-time analytics",
-    resources: ["Designing Data-Intensive Applications by Martin Kleppmann", "Apache Spark & Kafka documentation", "YouTube channels on system design"],
+    resources: [
+      "Designing Data-Intensive Applications by Martin Kleppmann",
+      "Apache Spark & Kafka documentation",
+      "YouTube channels on system design",
+    ],
     timeline: "2025-2026",
   },
   {
     area: "Machine Learning & AI",
-    description: "Move from integrating ML models to understanding core ML algorithms and infrastructure",
-    resources: ["Andrew Ng's Machine Learning courses", "Stanford CS231N", "Hands-on ML with Scikit-Learn"],
+    description:
+      "Move from integrating ML models to understanding core ML algorithms and infrastructure",
+    resources: [
+      "Andrew Ng's Machine Learning courses",
+      "Stanford CS231N",
+      "Hands-on ML with Scikit-Learn",
+    ],
     timeline: "2026-2027",
   },
   {
     area: "System Design & Architecture",
-    description: "Design scalable, fault-tolerant systems handling billions of requests",
-    resources: ["System Design Interview preparation", "CQRS and Event Sourcing patterns", "Microservices architecture"],
+    description:
+      "Design scalable, fault-tolerant systems handling billions of requests",
+    resources: [
+      "System Design Interview preparation",
+      "CQRS and Event Sourcing patterns",
+      "Microservices architecture",
+    ],
     timeline: "Ongoing",
   },
   {
     area: "Cloud Platforms & DevOps",
-    description: "AWS/GCP/Azure, containerization, CI/CD, infrastructure as code",
-    resources: ["AWS Certified Solutions Architect certification", "Docker & Kubernetes deep dive", "Terraform documentation"],
+    description:
+      "AWS/GCP/Azure, containerization, CI/CD, infrastructure as code",
+    resources: [
+      "AWS Certified Solutions Architect certification",
+      "Docker & Kubernetes deep dive",
+      "Terraform documentation",
+    ],
     timeline: "2025-2026",
   },
   {
     area: "Product Engineering",
-    description: "Understand business context, user needs, and product metrics alongside technical excellence",
-    resources: ["Inspired by Marty Cagan", "AARRR metrics", "Product management courses"],
+    description:
+      "Understand business context, user needs, and product metrics alongside technical excellence",
+    resources: [
+      "Inspired by Marty Cagan",
+      "AARRR metrics",
+      "Product management courses",
+    ],
     timeline: "2026-2027",
   },
   {
     area: "Leadership & Communication",
-    description: "Technical writing, public speaking, team management, organizational dynamics",
-    resources: ["Radical Candor by Kim Scott", "Toastmasters or similar groups", "Executive coaching"],
+    description:
+      "Technical writing, public speaking, team management, organizational dynamics",
+    resources: [
+      "Radical Candor by Kim Scott",
+      "Toastmasters or similar groups",
+      "Executive coaching",
+    ],
     timeline: "Ongoing",
   },
 ];
@@ -138,7 +167,8 @@ export default function Future() {
             Future Aspirations & Professional Development
           </h1>
           <p className="text-lg text-foreground font-medium max-w-2xl">
-            My vision for the next decade: becoming a principal engineer who solves hard problems at scale while making positive impact.
+            My vision for the next decade: becoming a principal engineer who
+            solves hard problems at scale while making positive impact.
           </p>
         </div>
       </section>
@@ -150,13 +180,28 @@ export default function Future() {
             <h2 className="letter-title">My Vision</h2>
             <div className="relative z-10 space-y-4 text-foreground leading-relaxed font-medium">
               <p>
-                I envision a career where I solve complex technical challenges that have meaningful impact on people's lives. Whether through building scalable data systems that power important decisions, contributing to climate tech solutions, or advancing healthcare through better technology infrastructure—I want my work to matter.
+                I envision a career where I solve complex technical challenges
+                that have meaningful impact on people's lives. Whether through
+                building scalable data systems that power important decisions,
+                contributing to climate tech solutions, or advancing healthcare
+                through better technology infrastructure—I want my work to
+                matter.
               </p>
               <p>
-                My path is not linear. I'm excited to explore different roles, technologies, and industries. But the common thread will always be: <span className="font-bold">technical excellence, continuous learning, and ethical responsibility</span>.
+                My path is not linear. I'm excited to explore different roles,
+                technologies, and industries. But the common thread will always
+                be:{" "}
+                <span className="font-bold">
+                  technical excellence, continuous learning, and ethical
+                  responsibility
+                </span>
+                .
               </p>
               <p>
-                Ultimately, I want to reach a level of expertise and influence where I can shape tech culture positively—mentoring others, advocating for responsible development, and building teams that deliver great outcomes while maintaining integrity.
+                Ultimately, I want to reach a level of expertise and influence
+                where I can shape tech culture positively—mentoring others,
+                advocating for responsible development, and building teams that
+                deliver great outcomes while maintaining integrity.
               </p>
             </div>
           </div>
@@ -181,7 +226,9 @@ export default function Future() {
                   <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-lg text-sm font-semibold mb-3 fine-stroke">
                     {goal.timeline}
                   </span>
-                  <h3 className="text-2xl font-bold text-foreground fine-stroke">{goal.title}</h3>
+                  <h3 className="text-2xl font-bold text-foreground fine-stroke">
+                    {goal.title}
+                  </h3>
                 </div>
 
                 <p className="text-foreground font-medium mb-6 pb-6 border-b border-border">
@@ -194,7 +241,10 @@ export default function Future() {
                   </h4>
                   <ul className="space-y-2">
                     {goal.goals.map((g, i) => (
-                      <li key={i} className="flex items-start gap-3 text-foreground font-medium">
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-foreground font-medium"
+                      >
                         <span className="text-primary font-bold mt-1">✓</span>
                         <span>{g}</span>
                       </li>
@@ -222,19 +272,28 @@ export default function Future() {
                 className="folded-note p-8 hover:fold-shadow-2 transition-all paper-corner paper-texture"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-xl font-bold text-foreground fine-stroke flex-1">{item.area}</h3>
+                  <h3 className="text-xl font-bold text-foreground fine-stroke flex-1">
+                    {item.area}
+                  </h3>
                   <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-md whitespace-nowrap ml-2">
                     {item.timeline}
                   </span>
                 </div>
 
-                <p className="text-foreground font-medium mb-4">{item.description}</p>
+                <p className="text-foreground font-medium mb-4">
+                  {item.description}
+                </p>
 
                 <div>
-                  <h4 className="font-bold text-foreground text-sm mb-2 fine-stroke">Resources</h4>
+                  <h4 className="font-bold text-foreground text-sm mb-2 fine-stroke">
+                    Resources
+                  </h4>
                   <ul className="space-y-1">
                     {item.resources.map((resource, i) => (
-                      <li key={i} className="text-foreground text-sm font-medium">
+                      <li
+                        key={i}
+                        className="text-foreground text-sm font-medium"
+                      >
                         • {resource}
                       </li>
                     ))}
@@ -269,7 +328,9 @@ export default function Future() {
                   {phase.milestones.map((milestone, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <span className="text-primary font-bold">→</span>
-                      <span className="text-foreground font-medium">{milestone}</span>
+                      <span className="text-foreground font-medium">
+                        {milestone}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -315,8 +376,12 @@ export default function Future() {
                   className="folded-note p-8 hover:fold-shadow-2 transition-all paper-corner paper-texture"
                 >
                   <Icon className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-xl font-bold mb-3 text-foreground fine-stroke">{item.title}</h3>
-                  <p className="text-foreground font-medium leading-relaxed">{item.description}</p>
+                  <h3 className="text-xl font-bold mb-3 text-foreground fine-stroke">
+                    {item.title}
+                  </h3>
+                  <p className="text-foreground font-medium leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               );
             })}
@@ -336,10 +401,7 @@ export default function Future() {
                 See where I stand today and my journey so far
               </p>
             </div>
-            <Link
-              to="/conclusion"
-              className="paper-button"
-            >
+            <Link to="/conclusion" className="paper-button">
               View Conclusion
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

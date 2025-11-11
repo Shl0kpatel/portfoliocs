@@ -111,16 +111,29 @@
     content: "";
     position: fixed;
     inset: 0;
-    background: 
-      radial-gradient(ellipse at 20% 30%, rgba(255, 200, 100, 0.03) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 70%, rgba(150, 100, 200, 0.03) 0%, transparent 50%),
+    background:
+      radial-gradient(
+        ellipse at 20% 30%,
+        rgba(255, 200, 100, 0.03) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse at 80% 70%,
+        rgba(150, 100, 200, 0.03) 0%,
+        transparent 50%
+      ),
       url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3CfeColorMatrix values='0 0 0 0 0, 0 0 0 0 0, 0 0 0 0 0, 0 0 0 0.02 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
     pointer-events: none;
     z-index: -1;
     opacity: 0.7;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Caveat", cursive;
     @apply font-bold;
     position: relative;
@@ -179,7 +192,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0,0,0,0.02) 0%, transparent 50%);
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 50%
+    );
     border-radius: 0.75rem;
     pointer-events: none;
   }
@@ -188,7 +205,7 @@
   .folded-note {
     @apply paper-fold;
     perspective: 1000px;
-    box-shadow: 
+    box-shadow:
       0 10px 25px rgba(0, 0, 0, 0.08),
       0 1px 2px rgba(0, 0, 0, 0.04),
       inset -1px -1px 3px rgba(255, 255, 255, 0.5);
@@ -198,7 +215,7 @@
 
   .folded-note:hover {
     transform: translateY(-8px);
-    box-shadow: 
+    box-shadow:
       0 20px 35px rgba(0, 0, 0, 0.12),
       0 2px 4px rgba(0, 0, 0, 0.06),
       inset -1px -1px 3px rgba(255, 255, 255, 0.5);
@@ -235,21 +252,21 @@
 
   /* Pastel fold shades */
   .fold-shadow-1 {
-    box-shadow: 
+    box-shadow:
       -2px -2px 6px rgba(0, 0, 0, 0.04),
       2px 2px 8px rgba(0, 0, 0, 0.06);
   }
 
   .fold-shadow-2 {
-    box-shadow: 
+    box-shadow:
       -3px -3px 8px rgba(0, 0, 0, 0.05),
       3px 3px 10px rgba(0, 0, 0, 0.08);
   }
 
   .fold-shadow-deep {
-    box-shadow: 
+    box-shadow:
       -4px -4px 12px rgba(0, 0, 0, 0.06),
-      4px 4px 14px rgba(0, 0, 0, 0.10),
+      4px 4px 14px rgba(0, 0, 0, 0.1),
       inset 0 1px 3px rgba(255, 255, 255, 0.4);
   }
 
@@ -262,7 +279,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: 
+    background-image:
       repeating-linear-gradient(
         0deg,
         transparent,
@@ -334,7 +351,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 50%
+    );
     border-radius: 0.75rem;
     opacity: 0;
     transition: opacity 0.3s;
@@ -377,7 +398,12 @@
   /* Portfolio section divider */
   .section-divider {
     height: 2px;
-    background: linear-gradient(90deg, transparent, hsl(var(--border)), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--border)),
+      transparent
+    );
     margin: 2rem 0;
   }
 
@@ -479,7 +505,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, transparent 50%);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      transparent 50%
+    );
     border-radius: 0.5rem 0.5rem 0 0;
     pointer-events: none;
   }
@@ -525,14 +555,13 @@
     content: "";
     position: absolute;
     inset: 0;
-    background:
-      repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 24px,
-        hsl(var(--border) / 0.3) 24px,
-        hsl(var(--border) / 0.3) 25px
-      );
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 24px,
+      hsl(var(--border) / 0.3) 24px,
+      hsl(var(--border) / 0.3) 25px
+    );
     pointer-events: none;
   }
 
@@ -610,7 +639,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 50%
+    );
     border-radius: 0.25rem;
     pointer-events: none;
   }
@@ -669,7 +702,11 @@
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(135deg, hsl(var(--primary) / 0.05) 0%, transparent 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary) / 0.05) 0%,
+      transparent 100%
+    );
     pointer-events: none;
   }
 
@@ -739,8 +776,11 @@
     left: 0;
     right: 0;
     height: 60px;
-    background: 
-      linear-gradient(135deg, transparent 30px, hsl(var(--primary) / 0.1) 30px);
+    background: linear-gradient(
+      135deg,
+      transparent 30px,
+      hsl(var(--primary) / 0.1) 30px
+    );
     border-bottom: 2px solid hsl(var(--border));
   }
 
@@ -755,14 +795,13 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: 
-      repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 28px,
-        hsl(var(--border) / 0.4) 28px,
-        hsl(var(--border) / 0.4) 29px
-      );
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 28px,
+      hsl(var(--border) / 0.4) 28px,
+      hsl(var(--border) / 0.4) 29px
+    );
     pointer-events: none;
   }
 
@@ -809,7 +848,7 @@
     height: 3rem;
     background: hsl(var(--destructive));
     border-radius: 50%;
-    box-shadow: 
+    box-shadow:
       0 2px 8px rgba(0, 0, 0, 0.2),
       inset 0 -2px 4px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -853,7 +892,8 @@
 
 /* ========== ANIMATIONS ========== */
 @keyframes gentle-float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {

@@ -10,7 +10,13 @@ const projects = [
       "Built a comprehensive milestone tracking web application for SpacECE NGO to measure and track organizational impact. Integrated AI-powered chatbot for real-time assistance and implemented accessibility features for diverse users.",
     outcomes:
       "Selected among top 400 from 60,000+ applicants, Served 20+ stakeholders during product demo, Recognized for teamwork and technical impact",
-    technologies: ["React", "Node.js", "Botpress AI", "Cloud Storage", "Multilingual Support"],
+    technologies: [
+      "React",
+      "Node.js",
+      "Botpress AI",
+      "Cloud Storage",
+      "Multilingual Support",
+    ],
     image: "I",
     githubLink: "https://github.com/Shl0kpatel/milestonetracker.git",
   },
@@ -21,7 +27,13 @@ const projects = [
       "Developed a Flask-based fitness tracking application with secure user authentication and personalized dashboard for logging exercises. Implemented robust backend with SQLite for data persistence and validated with multiple concurrent users.",
     outcomes:
       "Secure user registration and authentication, Personalized dashboards for exercise tracking, Supported 50+ concurrent test accounts",
-    technologies: ["Flask", "SQLite", "Python", "User Authentication", "HTML/CSS"],
+    technologies: [
+      "Flask",
+      "SQLite",
+      "Python",
+      "User Authentication",
+      "HTML/CSS",
+    ],
     image: "II",
     githubLink: "https://github.com/Shl0kpatel/exercise-tracker.git",
   },
@@ -32,7 +44,12 @@ const projects = [
       "Participated in competitive hackathon focusing on ERP integration and automation use-cases. Contributed to a shortlisted project demonstrating practical understanding of enterprise systems and automation workflows.",
     outcomes:
       "Selected among top 300 teams out of 6,000+ participating teams, Shortlisted project for practical ERP implementation",
-    technologies: ["Odoo ERP", "System Integration", "Automation", "Problem Solving"],
+    technologies: [
+      "Odoo ERP",
+      "System Integration",
+      "Automation",
+      "Problem Solving",
+    ],
     image: "III",
     githubLink: "https://github.com/AnujSharma-05/stackit_odoo.git",
   },
@@ -53,7 +70,8 @@ export default function Projects() {
             Interdisciplinary Projects & Research
           </h1>
           <p className="text-lg text-foreground font-medium max-w-2xl">
-            Projects that showcase problem-solving capabilities and technical expertise through real-world applications.
+            Projects that showcase problem-solving capabilities and technical
+            expertise through real-world applications.
           </p>
         </div>
       </section>
@@ -63,10 +81,7 @@ export default function Projects() {
         <div className="portfolio-container">
           <div className="space-y-12">
             {projects.map((project, idx) => (
-              <div
-                key={idx}
-                className="project-envelope group"
-              >
+              <div key={idx} className="project-envelope group">
                 {/* Title Section */}
                 <div className="project-tape">
                   <h3 className="text-xl font-bold text-foreground fine-stroke relative z-10">
@@ -78,7 +93,9 @@ export default function Projects() {
                 <div className="grid md:grid-cols-3 gap-6 p-8 md:p-10">
                   {/* Visual Identifier */}
                   <div className="flex items-center justify-center bg-accent/5 rounded-lg min-h-64 md:min-h-auto fold-shadow-1">
-                    <div className="text-6xl font-bold text-primary">{project.image}</div>
+                    <div className="text-6xl font-bold text-primary">
+                      {project.image}
+                    </div>
                   </div>
 
                   {/* Project Details */}
@@ -119,7 +136,7 @@ export default function Projects() {
                         </div>
                       </div>
 
-                      <a 
+                      <a
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -154,10 +171,10 @@ export default function Projects() {
                 Challenge Analysis
               </h3>
               <p className="text-foreground leading-relaxed font-medium">
-                In each project, I identify multi-faceted challenges that require
-                interdisciplinary understanding. Rather than isolated problems, I
-                view them as opportunities to synthesize knowledge across domains
-                and create comprehensive solutions.
+                In each project, I identify multi-faceted challenges that
+                require interdisciplinary understanding. Rather than isolated
+                problems, I view them as opportunities to synthesize knowledge
+                across domains and create comprehensive solutions.
               </p>
             </div>
 
@@ -166,9 +183,10 @@ export default function Projects() {
                 Solution Implementation
               </h3>
               <p className="text-foreground leading-relaxed font-medium">
-                My approach combines rigorous research methodology with creative 
-                innovation. I prototype early, test iteratively, and incorporate feedback 
-                to refine solutions that are both theoretically sound and practically effective.
+                My approach combines rigorous research methodology with creative
+                innovation. I prototype early, test iteratively, and incorporate
+                feedback to refine solutions that are both theoretically sound
+                and practically effective.
               </p>
             </div>
 
@@ -178,8 +196,9 @@ export default function Projects() {
               </h3>
               <p className="text-foreground leading-relaxed font-medium">
                 All projects are grounded in evidence and measurable outcomes. I
-                employ robust analytical frameworks to validate hypotheses, measure
-                impact, and demonstrate the effectiveness of proposed solutions.
+                employ robust analytical frameworks to validate hypotheses,
+                measure impact, and demonstrate the effectiveness of proposed
+                solutions.
               </p>
             </div>
 
@@ -188,9 +207,10 @@ export default function Projects() {
                 Cross-Disciplinary Integration
               </h3>
               <p className="text-foreground leading-relaxed font-medium">
-                I actively seek insights from multiple disciplines, believing that
-                breakthrough innovations emerge at the intersection of fields. This
-                approach has led to novel methodologies and solutions.
+                I actively seek insights from multiple disciplines, believing
+                that breakthrough innovations emerge at the intersection of
+                fields. This approach has led to novel methodologies and
+                solutions.
               </p>
             </div>
           </div>
@@ -206,13 +226,11 @@ export default function Projects() {
                 Discover My Skills
               </h2>
               <p className="text-muted-foreground font-medium">
-                Explore the technical and soft skills developed through these projects
+                Explore the technical and soft skills developed through these
+                projects
               </p>
             </div>
-            <Link
-              to="/skills"
-              className="paper-button"
-            >
+            <Link to="/skills" className="paper-button">
               View Skills
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

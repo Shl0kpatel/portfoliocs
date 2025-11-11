@@ -50,11 +50,7 @@ export default function Navigation() {
           className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <Menu className="w-6 h-6" />
-          )}
+          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 

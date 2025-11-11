@@ -14,18 +14,20 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
     console.log("Form submitted:", formData);
     alert("Message sent! Thank you for reaching out.");
-    
+
     setFormData({ name: "", email: "", subject: "", message: "" });
     setIsSubmitting(false);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -40,7 +42,9 @@ export default function Contact() {
       <section className="py-12 md:py-16 border-b border-border">
         <div className="portfolio-container">
           <div className="flex items-center gap-2 text-primary mb-4">
-            <span className="text-sm font-semibold fine-stroke">✉️ CONTACT</span>
+            <span className="text-sm font-semibold fine-stroke">
+              ✉️ CONTACT
+            </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground fine-stroke">
             Let's Connect
@@ -62,9 +66,9 @@ export default function Contact() {
                   Get in Touch
                 </h2>
                 <p className="text-foreground leading-relaxed font-medium mb-8">
-                  I'm always open to discussing new opportunities, interesting projects,
-                  or potential collaborations. Feel free to reach out through any channel
-                  below.
+                  I'm always open to discussing new opportunities, interesting
+                  projects, or potential collaborations. Feel free to reach out
+                  through any channel below.
                 </p>
               </div>
 
@@ -75,7 +79,9 @@ export default function Contact() {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1 fine-stroke">Email</h3>
+                    <h3 className="font-bold text-foreground mb-1 fine-stroke">
+                      Email
+                    </h3>
                     <a
                       href="mailto:shlok.modasa@gmail.com"
                       className="text-primary hover:underline font-medium"
@@ -90,7 +96,9 @@ export default function Contact() {
                     <Phone className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1 fine-stroke">Phone</h3>
+                    <h3 className="font-bold text-foreground mb-1 fine-stroke">
+                      Phone
+                    </h3>
                     <a
                       href="tel:+917990431911"
                       className="text-accent hover:underline font-medium"
@@ -105,9 +113,10 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1 fine-stroke">Location</h3>
+                    <h3 className="font-bold text-foreground mb-1 fine-stroke">
+                      Location
+                    </h3>
                     <p className="text-foreground font-medium">
-                      
                       Gandhinagar, Gujarat, India
                     </p>
                   </div>
@@ -129,10 +138,16 @@ export default function Contact() {
 
               {/* Form Content - Lined Paper */}
               <div className="lined-paper">
-                <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-6 relative z-10"
+                >
                   <div>
-                    <label htmlFor="name" className="block text-sm font-bold text-foreground mb-2 fine-stroke">
-                      <pre>  Your Name</pre>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-bold text-foreground mb-2 fine-stroke"
+                    >
+                      <pre> Your Name</pre>
                     </label>
                     <input
                       type="text"
@@ -147,8 +162,11 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-bold text-foreground mb-2 fine-stroke">
-                      <pre>  Email</pre>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-bold text-foreground mb-2 fine-stroke"
+                    >
+                      <pre> Email</pre>
                     </label>
                     <input
                       type="email"
@@ -163,8 +181,11 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-bold text-foreground mb-2 fine-stroke">
-                      <pre>  Subject</pre>
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-bold text-foreground mb-2 fine-stroke"
+                    >
+                      <pre> Subject</pre>
                     </label>
                     <input
                       type="text"
@@ -179,8 +200,11 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-bold text-foreground mb-2 fine-stroke">
-                      <pre>  Your Message</pre>
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-bold text-foreground mb-2 fine-stroke"
+                    >
+                      <pre> Your Message</pre>
                     </label>
                     <textarea
                       id="message"

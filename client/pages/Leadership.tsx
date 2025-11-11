@@ -68,13 +68,17 @@ export default function Leadership() {
       <section className="py-12 md:py-16 border-b border-border">
         <div className="portfolio-container">
           <div className="flex items-center gap-2 text-primary mb-4">
-            <span className="text-sm font-semibold fine-stroke">👥 LEADERSHIP</span>
+            <span className="text-sm font-semibold fine-stroke">
+              👥 LEADERSHIP
+            </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground fine-stroke">
             Collaborative & Leadership Experiences
           </h1>
           <p className="text-lg text-foreground font-medium max-w-2xl">
-            Experiences leading teams, mentoring peers, and collaborating across diverse groups. Each demonstrates commitment to enabling others and achieving shared goals.
+            Experiences leading teams, mentoring peers, and collaborating across
+            diverse groups. Each demonstrates commitment to enabling others and
+            achieving shared goals.
           </p>
         </div>
       </section>
@@ -89,7 +93,9 @@ export default function Leadership() {
             >
               {/* Header */}
               <div className="mb-6">
-                <h2 className="text-2xl font-bold mb-2 text-foreground fine-stroke">{exp.title}</h2>
+                <h2 className="text-2xl font-bold mb-2 text-foreground fine-stroke">
+                  {exp.title}
+                </h2>
                 <div className="flex flex-wrap gap-4 text-sm">
                   <span className="px-3 py-1 bg-primary/10 text-primary rounded-md font-semibold">
                     {exp.organization}
@@ -111,35 +117,47 @@ export default function Leadership() {
                   <h3 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                     Team Dynamics
                   </h3>
-                  <p className="text-foreground text-sm font-medium">{exp.teamDynamics}</p>
+                  <p className="text-foreground text-sm font-medium">
+                    {exp.teamDynamics}
+                  </p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                     Challenges Faced
                   </h3>
-                  <p className="text-foreground text-sm font-medium">{exp.challenges}</p>
+                  <p className="text-foreground text-sm font-medium">
+                    {exp.challenges}
+                  </p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                     Conflict Resolution
                   </h3>
-                  <p className="text-foreground text-sm font-medium">{exp.conflictResolution}</p>
+                  <p className="text-foreground text-sm font-medium">
+                    {exp.conflictResolution}
+                  </p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                     Outcomes
                   </h3>
-                  <p className="text-foreground text-sm font-medium">{exp.outcomes}</p>
+                  <p className="text-foreground text-sm font-medium">
+                    {exp.outcomes}
+                  </p>
                 </div>
               </div>
 
               {/* Learnings */}
               <div className="pt-4 border-t border-border">
-                <h3 className="font-bold text-foreground mb-2 fine-stroke">Key Learning</h3>
-                <p className="text-foreground font-medium italic">{exp.learnings}</p>
+                <h3 className="font-bold text-foreground mb-2 fine-stroke">
+                  Key Learning
+                </h3>
+                <p className="text-foreground font-medium italic">
+                  {exp.learnings}
+                </p>
               </div>
             </div>
           ))}
@@ -182,8 +200,12 @@ export default function Leadership() {
                   className="folded-note p-8 hover:fold-shadow-2 transition-all paper-corner paper-texture"
                 >
                   <Icon className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-xl font-bold mb-3 text-foreground fine-stroke">{qual.title}</h3>
-                  <p className="text-foreground font-medium leading-relaxed">{qual.description}</p>
+                  <h3 className="text-xl font-bold mb-3 text-foreground fine-stroke">
+                    {qual.title}
+                  </h3>
+                  <p className="text-foreground font-medium leading-relaxed">
+                    {qual.description}
+                  </p>
                 </div>
               );
             })}
@@ -200,13 +222,11 @@ export default function Leadership() {
                 Understanding Ethical Leadership
               </h2>
               <p className="text-muted-foreground font-medium">
-                Explore the ethical considerations that shape my leadership approach
+                Explore the ethical considerations that shape my leadership
+                approach
               </p>
             </div>
-            <Link
-              to="/ethics"
-              className="paper-button"
-            >
+            <Link to="/ethics" className="paper-button">
               View Ethics
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

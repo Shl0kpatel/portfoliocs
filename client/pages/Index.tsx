@@ -24,27 +24,22 @@ export default function Index() {
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg font-medium">
-                B.Tech Computer Science student, passionate about Data Science and product-oriented solutions. Explore my projects, achievements, and technical expertise.
+                B.Tech Computer Science student, passionate about Data Science
+                and product-oriented solutions. Explore my projects,
+                achievements, and technical expertise.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/about"
-                  className="paper-button group"
-                >
+                <Link to="/about" className="paper-button group">
                   Learn About Me
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link
-                  to="/projects"
-                  className="paper-button-outline group"
-                >
+                <Link to="/projects" className="paper-button-outline group">
                   View Projects
                 </Link>
               </div>
 
               {/* Stats with folded effect */}
-              
             </div>
 
             {/* Right side - Visual */}
@@ -55,10 +50,18 @@ export default function Index() {
                   <div className="flex flex-col items-center justify-center text-center">
                     {/* Your Photo in Circular Frame */}
                     <div className="w-48 h-48 rounded-full mb-4 overflow-hidden border-4 border-primary/20 shadow-lg">
-                      <img src="/profile.jpg" alt="Shlok Patel" className="w-full h-full object-cover"/>
+                      <img
+                        src="/profile.jpg"
+                        alt="Shlok Patel"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <p className="text-lg font-semibold text-foreground fine-stroke">Shlok Patel</p>
-                    <p className="text-sm text-muted-foreground font-medium mt-1">B.Tech CS Student</p>
+                    <p className="text-lg font-semibold text-foreground fine-stroke">
+                      Shlok Patel
+                    </p>
+                    <p className="text-sm text-muted-foreground font-medium mt-1">
+                      B.Tech CS Student
+                    </p>
                   </div>
                 </div>
 
@@ -110,9 +113,15 @@ export default function Index() {
                 key={item.title}
                 className="folded-note p-6 hover:fold-shadow-deep transition-all paper-corner paper-texture paper-unfold"
               >
-                <div className="text-3xl font-bold text-primary mb-4">{item.icon}</div>
-                <h3 className="text-2xl font-bold mb-2 text-foreground fine-stroke">{item.title}</h3>
-                <p className="text-muted-foreground font-medium">{item.description}</p>
+                <div className="text-3xl font-bold text-primary mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-foreground fine-stroke">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground font-medium">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -124,13 +133,11 @@ export default function Index() {
         <div className="portfolio-container text-center">
           <h2 className="section-title">Ready to Connect?</h2>
           <p className="section-subtitle max-w-2xl mx-auto">
-            Interested in collaboration or have questions? Let's start a conversation.
+            Interested in collaboration or have questions? Let's start a
+            conversation.
           </p>
 
-          <Link
-            to="/contact"
-            className="paper-button inline-flex text-lg"
-          >
+          <Link to="/contact" className="paper-button inline-flex text-lg">
             Get In Touch
             <ArrowRight className="w-6 h-6 ml-2" />
           </Link>

@@ -90,7 +90,8 @@ export default function Ethics() {
             Global Awareness & Ethical Considerations
           </h1>
           <p className="text-lg text-foreground font-medium max-w-2xl">
-            How global issues, ethical dilemmas, and societal impact shape my approach to technology and professional responsibility.
+            How global issues, ethical dilemmas, and societal impact shape my
+            approach to technology and professional responsibility.
           </p>
         </div>
       </section>
@@ -102,13 +103,28 @@ export default function Ethics() {
             <h2 className="letter-title">My Ethical Foundation</h2>
             <div className="relative z-10 space-y-4 text-foreground leading-relaxed font-medium">
               <p>
-                As a technology professional, I recognize that my work doesn't exist in isolation. Every system I build, every line of code I write, has potential consequences for real people and communities. This awareness drives my commitment to ethical software development.
+                As a technology professional, I recognize that my work doesn't
+                exist in isolation. Every system I build, every line of code I
+                write, has potential consequences for real people and
+                communities. This awareness drives my commitment to ethical
+                software development.
               </p>
               <p>
-                I believe that technical excellence and ethical responsibility are inseparable. A technically brilliant system that violates privacy, amplifies bias, or ignores accessibility is fundamentally flawed. Conversely, ethical considerations inform better design decisions and create stronger, more resilient systems.
+                I believe that technical excellence and ethical responsibility
+                are inseparable. A technically brilliant system that violates
+                privacy, amplifies bias, or ignores accessibility is
+                fundamentally flawed. Conversely, ethical considerations inform
+                better design decisions and create stronger, more resilient
+                systems.
               </p>
               <p>
-                My ethical approach is grounded in three principles: <span className="font-bold">Responsibility</span> (owning the impact of my work), <span className="font-bold">Transparency</span> (making decisions visible and accountable), and <span className="font-bold">Inclusivity</span> (considering diverse voices and contexts).
+                My ethical approach is grounded in three principles:{" "}
+                <span className="font-bold">Responsibility</span> (owning the
+                impact of my work),{" "}
+                <span className="font-bold">Transparency</span> (making
+                decisions visible and accountable), and{" "}
+                <span className="font-bold">Inclusivity</span> (considering
+                diverse voices and contexts).
               </p>
             </div>
           </div>
@@ -138,14 +154,18 @@ export default function Ethics() {
                     <h4 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                       Context
                     </h4>
-                    <p className="text-foreground text-sm font-medium">{caseStudy.context}</p>
+                    <p className="text-foreground text-sm font-medium">
+                      {caseStudy.context}
+                    </p>
                   </div>
 
                   <div>
                     <h4 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                       Ethical Challenge
                     </h4>
-                    <p className="text-foreground text-sm font-medium italic">{caseStudy.challenge}</p>
+                    <p className="text-foreground text-sm font-medium italic">
+                      {caseStudy.challenge}
+                    </p>
                   </div>
                 </div>
 
@@ -154,20 +174,25 @@ export default function Ethics() {
                     <h4 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                       My Approach
                     </h4>
-                    <p className="text-foreground text-sm font-medium">{caseStudy.approach}</p>
+                    <p className="text-foreground text-sm font-medium">
+                      {caseStudy.approach}
+                    </p>
                   </div>
 
                   <div>
                     <h4 className="font-bold text-foreground mb-2 fine-stroke text-sm uppercase">
                       Reflection & Impact
                     </h4>
-                    <p className="text-foreground text-sm font-medium">{caseStudy.reflection}</p>
+                    <p className="text-foreground text-sm font-medium">
+                      {caseStudy.reflection}
+                    </p>
                   </div>
                 </div>
 
                 <div className="mt-4 pt-4 border-t border-border">
                   <p className="text-foreground font-medium">
-                    <span className="font-bold">Impact: </span>{caseStudy.impact}
+                    <span className="font-bold">Impact: </span>
+                    {caseStudy.impact}
                   </p>
                 </div>
               </div>
@@ -179,7 +204,9 @@ export default function Ethics() {
       {/* Global Awareness Topics */}
       <section className="py-12 md:py-16 bg-background border-b border-border">
         <div className="portfolio-container">
-          <h2 className="section-title">Global Issues Shaping My Perspective</h2>
+          <h2 className="section-title">
+            Global Issues Shaping My Perspective
+          </h2>
           <p className="section-subtitle">
             Broader global challenges influencing my approach to technology
           </p>
@@ -190,11 +217,16 @@ export default function Ethics() {
                 key={idx}
                 className="folded-note p-8 hover:fold-shadow-2 transition-all paper-corner paper-texture"
               >
-                <h3 className="text-xl font-bold mb-4 text-foreground fine-stroke">{topic.title}</h3>
-                <p className="text-foreground font-medium mb-4">{topic.description}</p>
+                <h3 className="text-xl font-bold mb-4 text-foreground fine-stroke">
+                  {topic.title}
+                </h3>
+                <p className="text-foreground font-medium mb-4">
+                  {topic.description}
+                </p>
                 <div className="pt-4 border-t border-border">
                   <p className="text-foreground text-sm font-medium italic">
-                    <span className="font-bold">My Perspective: </span>{topic.myPerspective}
+                    <span className="font-bold">My Perspective: </span>
+                    {topic.myPerspective}
                   </p>
                 </div>
               </div>
@@ -239,8 +271,12 @@ export default function Ethics() {
                   className="folded-note p-8 hover:fold-shadow-2 transition-all paper-corner paper-texture"
                 >
                   <Icon className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-lg font-bold mb-3 text-foreground fine-stroke">{item.title}</h3>
-                  <p className="text-foreground font-medium text-sm leading-relaxed">{item.commitment}</p>
+                  <h3 className="text-lg font-bold mb-3 text-foreground fine-stroke">
+                    {item.title}
+                  </h3>
+                  <p className="text-foreground font-medium text-sm leading-relaxed">
+                    {item.commitment}
+                  </p>
                 </div>
               );
             })}
@@ -260,10 +296,7 @@ export default function Ethics() {
                 Learn about my career aspirations and continuous learning plans
               </p>
             </div>
-            <Link
-              to="/future"
-              className="paper-button"
-            >
+            <Link to="/future" className="paper-button">
               View Future Goals
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
