@@ -1,12 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight, Code2, Users, Palette } from "lucide-react";
+import { ArrowRight, Code2, Users, Palette, Zap } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Technical Proficiencies",
-    icon: Code,
+    icon: Code2,
     skills: [
       {
         name: "Full-Stack Web Development",
