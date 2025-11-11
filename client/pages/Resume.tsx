@@ -13,15 +13,19 @@ export default function Resume() {
           <div className="flex items-center justify-between flex-col md:flex-row gap-4">
             <div className="flex-1">
               <div className="flex items-center gap-2 text-primary mb-4">
-                <span className="text-sm font-semibold fine-stroke">📋 PROFESSIONAL</span>
+                <span className="text-sm font-semibold fine-stroke">
+                  PROFESSIONAL
+                </span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground fine-stroke">Resume & CV</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground fine-stroke">
+                Resume & CV
+              </h1>
               <p className="text-lg text-foreground font-medium max-w-2xl">
                 Comprehensive overview of education, experience, skills, and
                 professional achievements.
               </p>
             </div>
-            <a 
+            <a
               href="https://drive.google.com/file/d/1LukwWFOGqg79u1uoS8s-yhcxCY0Br0cK/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,22 +47,32 @@ export default function Resume() {
               <div className="sticky top-24 space-y-8">
                 {/* Contact */}
                 <div>
-                  <h3 className="font-bold text-lg mb-4 text-foreground fine-stroke">Contact</h3>
+                  <h3 className="font-bold text-lg mb-4 text-foreground fine-stroke">
+                    Contact
+                  </h3>
                   <div className="folded-note p-4 space-y-2 text-sm text-foreground font-medium paper-corner paper-texture">
                     <p>
-                      <span className="font-bold block text-foreground">Email:</span>
+                      <span className="font-bold block text-foreground">
+                        Email:
+                      </span>
                       shlok.modasa@gmail.com
                     </p>
                     <p>
-                      <span className="font-bold block text-foreground">Phone:</span>
+                      <span className="font-bold block text-foreground">
+                        Phone:
+                      </span>
                       +91 7990431911
                     </p>
                     <p>
-                      <span className="font-bold block text-foreground">LinkedIn:</span>
+                      <span className="font-bold block text-foreground">
+                        LinkedIn:
+                      </span>
                       Shlok Patel
                     </p>
                     <p>
-                      <span className="font-bold block text-foreground">GitHub:</span>
+                      <span className="font-bold block text-foreground">
+                        GitHub:
+                      </span>
                       shl0kpatel
                     </p>
                   </div>
@@ -66,7 +80,9 @@ export default function Resume() {
 
                 {/* Programming Languages */}
                 <div>
-                  <h3 className="font-bold text-lg mb-4 text-foreground fine-stroke">Languages</h3>
+                  <h3 className="font-bold text-lg mb-4 text-foreground fine-stroke">
+                    Languages
+                  </h3>
                   <div className="space-y-3">
                     {[
                       { name: "Python", level: 90 },
@@ -76,7 +92,9 @@ export default function Resume() {
                       { name: "C", level: 80 },
                     ].map((lang) => (
                       <div key={lang.name}>
-                        <p className="text-sm font-bold mb-1 text-foreground fine-stroke">{lang.name}</p>
+                        <p className="text-sm font-bold mb-1 text-foreground fine-stroke">
+                          {lang.name}
+                        </p>
                         <div className="w-full bg-muted h-2 rounded-full overflow-hidden fold-shadow-1">
                           <div
                             className="h-full bg-primary transition-all rounded-full"
@@ -90,7 +108,9 @@ export default function Resume() {
 
                 {/* Achievements */}
                 <div>
-                  <h3 className="font-bold text-lg mb-4 text-foreground fine-stroke">Achievements</h3>
+                  <h3 className="font-bold text-lg mb-4 text-foreground fine-stroke">
+                    Achievements
+                  </h3>
                   <div className="folded-note p-4 space-y-2 text-sm text-foreground font-medium paper-corner paper-texture">
                     <li className="flex items-start gap-2">
                       <span className="text-primary font-bold mt-1">★</span>
@@ -125,11 +145,13 @@ export default function Resume() {
                       Pandit Deendayal Energy University
                     </p>
                     <p className="text-sm text-foreground font-medium mt-1">
-                      Computer Science and Engineering | 2021 - 2025 (Expected June 2025)
+                      Computer Science and Engineering | 2021 - 2025 (Expected
+                      June 2025)
                     </p>
                     <p className="text-foreground font-medium mt-2">
                       CGPA: 9.91 / 10.00 | Relevant Coursework: Data Structures,
-                      Object-Oriented Programming, Database Management Systems, Web Development
+                      Object-Oriented Programming, Database Management Systems,
+                      Web Development
                     </p>
                   </div>
                 </div>
@@ -145,26 +167,28 @@ export default function Resume() {
                     <h3 className="font-bold text-lg text-foreground fine-stroke">
                       Milestone Tracker – JPMC Code for Good 2025
                     </h3>
-                    <p className="text-primary font-semibold mt-1 fine-stroke">Winner Project</p>
+                    <p className="text-primary font-semibold mt-1 fine-stroke">
+                      Winner Project
+                    </p>
                     <p className="text-sm text-foreground font-medium mt-1">
                       24-Hour Hackathon | React, Node.js, Cloud Storage
                     </p>
                     <ul className="mt-3 space-y-1 text-foreground font-medium text-sm">
                       <li>
-                        • Built milestone tracking web app for SpacECE NGO with AI
-                        chatbot integration
+                        • Built milestone tracking web app for SpacECE NGO with
+                        AI chatbot integration
                       </li>
                       <li>
-                        • Integrated Botpress-based chatbot for FAQ and real-time
-                        queries
+                        • Integrated Botpress-based chatbot for FAQ and
+                        real-time queries
                       </li>
                       <li>
-                        • Implemented multilingual support and voice guidance for
-                        accessibility
+                        • Implemented multilingual support and voice guidance
+                        for accessibility
                       </li>
                       <li>
-                        • Served 20+ stakeholders during product demo; recognized for
-                        teamwork
+                        • Served 20+ stakeholders during product demo;
+                        recognized for teamwork
                       </li>
                     </ul>
                   </div>
@@ -172,20 +196,24 @@ export default function Resume() {
                     <h3 className="font-bold text-lg text-foreground fine-stroke">
                       Exercise Tracking System
                     </h3>
-                    <p className="text-primary font-semibold mt-1 fine-stroke">Personal Project</p>
+                    <p className="text-primary font-semibold mt-1 fine-stroke">
+                      Personal Project
+                    </p>
                     <p className="text-sm text-foreground font-medium mt-1">
                       Flask, SQLite, User Authentication
                     </p>
                     <ul className="mt-3 space-y-1 text-foreground font-medium text-sm">
                       <li>
-                        • Developed Flask-based fitness tracker with secure registration
+                        • Developed Flask-based fitness tracker with secure
+                        registration
                       </li>
                       <li>
-                        • Implemented personalized dashboards for exercise logging and
-                        history
+                        • Implemented personalized dashboards for exercise
+                        logging and history
                       </li>
                       <li>
-                        • Validated with 50+ concurrent test accounts using SQLite
+                        • Validated with 50+ concurrent test accounts using
+                        SQLite
                       </li>
                     </ul>
                   </div>
@@ -201,18 +229,34 @@ export default function Resume() {
                   {[
                     {
                       category: "Languages",
-                      skills: ["Python", "Java", "C", "JavaScript", "SQL", "MongoDB"],
+                      skills: [
+                        "Python",
+                        "Java",
+                        "C",
+                        "JavaScript",
+                        "SQL",
+                        "MongoDB",
+                      ],
                     },
                     {
                       category: "Web Frameworks",
-                      skills: ["React.js", "Next.js", "Flask", "Django", "Node.js"],
+                      skills: [
+                        "React.js",
+                        "Next.js",
+                        "Flask",
+                        "Django",
+                        "Node.js",
+                      ],
                     },
                     {
                       category: "Tools & Platforms",
                       skills: ["Git", "GitHub", "Cloud Storage", "HTML/CSS"],
                     },
                   ].map((skill) => (
-                    <div key={skill.category} className="folded-note p-4 paper-corner paper-texture fold-shadow-1">
+                    <div
+                      key={skill.category}
+                      className="folded-note p-4 paper-corner paper-texture fold-shadow-1"
+                    >
                       <p className="font-semibold text-foreground mb-3 fine-stroke">
                         {skill.category}
                       </p>
@@ -249,7 +293,9 @@ export default function Resume() {
                       key={skill}
                       className="folded-note p-4 paper-corner paper-texture fold-shadow-1"
                     >
-                      <span className="text-foreground font-semibold fine-stroke">{skill}</span>
+                      <span className="text-foreground font-semibold fine-stroke">
+                        {skill}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -271,10 +317,7 @@ export default function Resume() {
                 Check out my projects and research endeavors
               </p>
             </div>
-            <Link
-              to="/projects"
-              className="paper-button"
-            >
+            <Link to="/projects" className="paper-button">
               View Projects
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
