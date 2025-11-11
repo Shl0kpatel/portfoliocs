@@ -335,7 +335,7 @@ export default function Conclusion() {
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-500 font-bold">��</span>
+                  <span className="text-green-500 font-bold">◆</span>
                   <span className="text-foreground font-medium">
                     Open-source communities and mentorship from industry experts
                   </span>

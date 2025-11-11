@@ -50,7 +50,7 @@ export default function Contact() {
             Let's Connect
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl font-medium">
-            Send me a note �� like slipping a letter into an origami envelope.
+            Send me a note like slipping a letter into an origami envelope.
           </p>
         </div>
       </section>

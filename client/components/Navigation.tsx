@@ -23,11 +23,10 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 navbar-paper">
       <div className="portfolio-container flex items-center justify-between h-20">
         {/* Logo / Branding */}
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="nav-logo-mark w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-            <span className="text-sm font-bold text-primary">SP</span>
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="nav-logo-mark">
           </div>
-          <span className="font-bold text-base hidden sm:inline-block text-foreground group-hover:text-primary transition-colors">
+          <span className="font-bold text-lg hidden sm:inline-block text-foreground group-hover:text-primary transition-colors">
             Shlok Patel
           </span>
         </Link>
