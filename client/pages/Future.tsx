@@ -306,40 +306,7 @@ export default function Future() {
         </div>
       </section>
 
-      {/* Implementation Roadmap */}
-      <section className="section-padding border-b border-border">
-        <div className="portfolio-container">
-          <h2 className="section-title">Quarterly Roadmap</h2>
-          <p className="section-subtitle">
-            Concrete action items for the next 2 years
-          </p>
 
-          <div className="space-y-6">
-            {roadmap.map((phase, idx) => (
-              <div
-                key={idx}
-                className="folded-note p-8 hover:fold-shadow-2 transition-all paper-corner paper-texture"
-              >
-                <h3 className="text-xl font-bold mb-4 text-foreground fine-stroke flex items-center gap-2">
-                  <TrendingUp className="w-6 h-6 text-primary" />
-                  {phase.quarter}
-                </h3>
-
-                <div className="space-y-2">
-                  {phase.milestones.map((milestone, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <span className="text-primary font-bold">→</span>
-                      <span className="text-foreground font-medium">
-                        {milestone}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Learning Philosophy */}
       <section className="py-12 md:py-16 bg-primary/5 border-b border-border">
